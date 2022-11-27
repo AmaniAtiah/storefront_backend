@@ -18,7 +18,7 @@
 
 # BCRYPT VARIABLES
 ##### BCRYPT_PASSWORD=your_secret_password
-#####SALT_ROUNDS=10
+##### SALT_ROUNDS=10
 
 # JWT
 ##### TOKEN_SECRET=your_secret_token
