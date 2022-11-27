@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var users_1 = __importDefault(require("./api/users"));
+var products_1 = __importDefault(require("./api/products"));
+var category_1 = __importDefault(require("./api/category"));
+var cart_1 = __importDefault(require("./api/cart"));
+var address_1 = __importDefault(require("./api/address"));
+var order_1 = __importDefault(require("./api/order"));
+var routes = (0, express_1.Router)();
+routes.use('/users', users_1.default);
+routes.use('/products', products_1.default);
+routes.use('/categories', category_1.default);
+routes.use('/cart', cart_1.default);
+routes.use('/address', address_1.default);
+routes.use('/orders', order_1.default);
+exports.default = routes;
